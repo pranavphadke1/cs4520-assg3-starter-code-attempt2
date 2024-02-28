@@ -13,7 +13,7 @@ import com.cs4520.assignment3.databinding.CalculatorViewBinding
 
 class MVPFragment: Fragment(R.layout.calculator_view), MVPContract.View {
     private var _calculator_view_binding: CalculatorViewBinding? = null
-    private val mvp_view_binding get() = _calculator_view_binding!!
+    private val calculator_view_binding get() = _calculator_view_binding!!
 
     private var number1: EditText? = null
     private var number2: EditText? = null
@@ -50,7 +50,7 @@ class MVPFragment: Fragment(R.layout.calculator_view), MVPContract.View {
         multiply_button!!.setOnClickListener { presenter!!.onOperation("multiply") }
         divide_button!!.setOnClickListener { presenter!!.onOperation("divide") }
 
-        return mvp_view_binding.root
+        return calculator_view_binding.root
 
     }
 

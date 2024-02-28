@@ -11,6 +11,9 @@
         <action
             android:id="@+id/action_home_to_mvp"
             app:destination="@id/MVPFragment" />
+        <action
+            android:id="@+id/action_home_to_mvvm"
+            app:destination="@id/MVVMFragment" />
     </fragment>
 
     <fragment
@@ -18,6 +21,12 @@
         android:name="com.cs4520.assignment3.MVPFragment"
         android:label="MVPFragment">
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/MVVMFragment"
+        android:name="com.cs4520.assignment3.MVVMFragment"
+        android:label="MVVMFragment">
     </fragment>
 
 

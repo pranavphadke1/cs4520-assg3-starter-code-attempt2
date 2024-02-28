@@ -19,8 +19,13 @@ class HomeFragment: Fragment(R.layout.home_view) {
         super.onCreateView(inflater, container, savedInstanceState)
         _home_binding = HomeViewBinding.inflate(inflater, container, false)
         val navController = findNavController()
+
         val mvpButton = _home_binding!!.mvpButton
         mvpButton.setOnClickListener{ navController.navigate(R.id.action_home_to_mvp) }
+
+        val mvvmButton = _home_binding!!.mvvmButton
+        mvvmButton.setOnClickListener{ navController.navigate(R.id.action_home_to_mvvm) }
+
         return home_binding.root
     }
 }
