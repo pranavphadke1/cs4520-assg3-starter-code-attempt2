@@ -43,7 +43,7 @@ class MVPFragment: Fragment(R.layout.mvp_view), MVPContract.View {
         multiply_button = _mvp_view_binding!!.multiplyButton
         divide_button = _mvp_view_binding!!.divideButton
 
-        presenter = MVPPresenter(this, MVPModel())
+        presenter = MVPPresenter(this, Model())
 
         add_button!!.setOnClickListener { presenter!!.onOperation("add") }
         subtract_button!!.setOnClickListener { presenter!!.onOperation("subtract") }

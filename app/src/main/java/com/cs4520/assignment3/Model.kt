@@ -1,6 +1,6 @@
 package com.cs4520.assignment3
 
-class MVPModel: MVPContract.Model {
+class Model: MVPContract.Model {
     override fun performOperation(number1: Double, number2: Double, operation: String): String {
         var result: Double = 0.0;
         when (operation) {
