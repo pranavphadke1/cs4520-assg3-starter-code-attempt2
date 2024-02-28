@@ -2,14 +2,14 @@ package com.cs4520.assignment3
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.cs4520.assignment3.databinding.HomeViewBinding
+import com.cs4520.assignment3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var home_binding: HomeViewBinding
+    private lateinit var activity_main_binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        home_binding = HomeViewBinding.inflate(layoutInflater)
-        setContentView(home_binding.root)
+        activity_main_binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(activity_main_binding.root)
     }
 }
