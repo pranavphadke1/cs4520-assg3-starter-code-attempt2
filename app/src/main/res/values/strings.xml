@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">assignment3</string>
+    <string name="mvp">MVP</string>
+    <string name="mvvm">MVVM</string>
+    <string name="number1">Enter number 1</string>
+    <string name="number2">Enter number 2</string>
+    <string name="add">ADD</string>
+    <string name="subtract">SUBTRACT</string>
+    <string name="multiply">MULTIPLY</string>
+    <string name="divide">DIVIDE</string>
+    <string name="error">Invalid/Missing Numbers</string>
 </resources>
