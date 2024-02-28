@@ -62,8 +62,14 @@ class MVPFragment: Fragment(R.layout.mvp_view), MVPContract.View {
         return number2?.text.toString()
     }
 
-    override fun displayToast() {
-        Toast.makeText(context, R.string.error, Toast.LENGTH_SHORT).show()
+    override fun displayToast(divideBy0: Boolean) {
+        if (divideBy0){
+            Toast.makeText(context, R.string.divide_by_0, Toast.LENGTH_SHORT).show()
+        }
+        else {
+            Toast.makeText(context, R.string.invalid_input, Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     override fun setResult(result: String) {

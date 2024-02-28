@@ -9,7 +9,10 @@ class MVPPresenter(private val view: MVPContract.View?,
             val number2: String = view.getNumber2()
 
             if (number1.isEmpty() || number2.isEmpty()) {
-                view.displayToast()
+                view.displayToast(false)
+            }
+            else if (operation == "divide" && number2.toDouble() == 0.0){
+                view.displayToast(true)
             }
             else {
                 val result: String = model.performOperation(number1.toDouble(), number2.toDouble(), operation)

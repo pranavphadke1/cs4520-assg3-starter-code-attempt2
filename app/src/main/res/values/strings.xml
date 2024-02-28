@@ -8,5 +8,6 @@
     <string name="subtract">SUBTRACT</string>
     <string name="multiply">MULTIPLY</string>
     <string name="divide">DIVIDE</string>
-    <string name="error">Invalid/Missing Numbers</string>
+    <string name="invalid_input">Invalid/Missing Numbers</string>
+    <string name="divide_by_0">Cannot divide by 0</string>
 </resources>

@@ -13,9 +13,10 @@ interface MVPContract {
         fun getNumber2(): String
 
         /**
-         * Display toast message if numbers provided are invalid
+         * Display toast message if numbers provided are invalid. If divideBy0 is true, display
+         * the can't divide by zero toast message
          */
-        fun displayToast()
+        fun displayToast(divideBy0: Boolean)
 
 
         /**
