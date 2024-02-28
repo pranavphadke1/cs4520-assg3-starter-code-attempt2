@@ -9,11 +9,11 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.cs4520.assignment3.databinding.MvpViewBinding
+import com.cs4520.assignment3.databinding.CalculatorViewBinding
 
-class MVPFragment: Fragment(R.layout.mvp_view), MVPContract.View {
-    private var _mvp_view_binding: MvpViewBinding? = null
-    private val mvp_view_binding get() = _mvp_view_binding!!
+class MVPFragment: Fragment(R.layout.calculator_view), MVPContract.View {
+    private var _calculator_view_binding: CalculatorViewBinding? = null
+    private val mvp_view_binding get() = _calculator_view_binding!!
 
     private var number1: EditText? = null
     private var number2: EditText? = null
@@ -32,16 +32,16 @@ class MVPFragment: Fragment(R.layout.mvp_view), MVPContract.View {
         savedInstanceState: Bundle?
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
-        _mvp_view_binding = MvpViewBinding.inflate(inflater, container, false)
+        _calculator_view_binding = CalculatorViewBinding.inflate(inflater, container, false)
 
-        number1 = _mvp_view_binding!!.number1
-        number2 = _mvp_view_binding!!.number2
-        result = _mvp_view_binding!!.result
+        number1 = _calculator_view_binding!!.number1
+        number2 = _calculator_view_binding!!.number2
+        result = _calculator_view_binding!!.result
 
-        add_button = _mvp_view_binding!!.addButton
-        subtract_button = _mvp_view_binding!!.subtractButton
-        multiply_button = _mvp_view_binding!!.multiplyButton
-        divide_button = _mvp_view_binding!!.divideButton
+        add_button = _calculator_view_binding!!.addButton
+        subtract_button = _calculator_view_binding!!.subtractButton
+        multiply_button = _calculator_view_binding!!.multiplyButton
+        divide_button = _calculator_view_binding!!.divideButton
 
         presenter = MVPPresenter(this, Model())
 

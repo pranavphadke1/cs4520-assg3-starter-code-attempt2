@@ -1,6 +1,10 @@
 package com.cs4520.assignment3
 
 class Model: MVPContract.Model {
+    //    Used by MVVMFragment
+    var number1: String? = null
+    var number2: String? = null
+
     override fun performOperation(number1: Double, number2: Double, operation: String): String {
         var result: Double = 0.0;
         when (operation) {
