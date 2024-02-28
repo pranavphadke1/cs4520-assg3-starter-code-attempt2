@@ -24,7 +24,7 @@ class MVPFragment: Fragment(R.layout.mvp_view), MVPContract.View {
     private var multiply_button: Button? = null
     private var divide_button: Button? = null
 
-    var presenter: MVPPresenter? = null
+    private var presenter: MVPPresenter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
