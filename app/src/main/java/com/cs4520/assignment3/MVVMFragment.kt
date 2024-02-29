@@ -107,7 +107,10 @@ class MVVMFragment: Fragment(R.layout.calculator_view) {
 
     private fun observeLiveData() {
         viewModel.result.observe(viewLifecycleOwner, Observer { newResult ->
-            result?.text = newResult
+            if (newResult != ""){
+                result?.text = "Result: $newResult"
+            }
+
         })
         viewModel.displayErrorMessage.observe(viewLifecycleOwner, Observer { displayToast ->
             if (displayToast) {

@@ -73,7 +73,7 @@ class MVPFragment: Fragment(R.layout.calculator_view), MVPContract.View {
     }
 
     override fun setResult(result: String) {
-        this.result?.text = result
+        this.result?.text = "Result: $result"
     }
 
     override fun clearNumbers() {
